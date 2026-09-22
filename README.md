@@ -122,7 +122,7 @@ The AI does **not**:
                         │             │
                         ▼             ▼
                   ┌─────────────────────┐
-                  │   SECURITY ENGINE    │
+                  │   SECURITY ENGINE   │
                   │                     │
                   │ URL Structure       │
                   │ Connection          │
