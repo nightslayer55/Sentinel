@@ -8,6 +8,18 @@ Sentinel is a security analysis tool that analyzes suspicious **URLs, QR codes, 
 
 The security engine performs deterministic analysis and calculates the risk score. A local AI model then explains those findings to the user.
 
+## Dashboard
+
+![Sentinel Dashboard](screenshots/Sentineldashboard.png)
+
+## Dashboard Analysis
+
+![Sentinel Dashboard](screenshots/sentineldashboardanalysis.png)
+
+## Dashboard Analysis 2
+
+![Sentinel Dashboard](screenshots/sentineldashboardanalysis2.png)
+
 ---
 
 ## The Problem
