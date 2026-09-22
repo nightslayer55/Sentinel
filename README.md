@@ -12,11 +12,11 @@ The security engine performs deterministic analysis and calculates the risk scor
 
 ![Sentinel Dashboard](screenshots/Sentineldashboard.png)
 
-## Dashboard Analysis
+## Analysis
 
 ![Sentinel Dashboard](screenshots/sentineldashboardanalysis.png)
 
-## Dashboard Analysis 2
+## Analysis 2
 
 ![Sentinel Dashboard](screenshots/sentineldashboardanalysis2.png)
 
