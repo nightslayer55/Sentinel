@@ -273,7 +273,7 @@ Sentinal/
 
 ```bash
 git clone https://github.com/nightslayer55/Sentinel.git
-cd Sentinal
+cd Sentinel
 ```
 
 ### 2. Install Python dependencies
