@@ -4,7 +4,11 @@ except ImportError:
     ollama = None
 
 OLLAMA_HOST = os.getenv("OLLAMA_HOST")
-ollama_client = ollama.Client(host=OLLAMA_HOST) if OLLAMA_HOST else None
+
+if OLLAMA_HOST and ollama is not None:
+    ollama_client = ollama.Client(host=OLLAMA_HOST)
+else:
+    ollama_client = None
 
 
 def generate_explanation(risk_score, risk_level, evidence_summary):
