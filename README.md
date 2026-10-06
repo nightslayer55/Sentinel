@@ -31,7 +31,7 @@ The full Sentinel environment can be run locally with Docker, where Ollama and L
 The security risk score is calculated independently by Sentinel's deterministic security engine and is not generated or modified by the AI. This ensures that the AI explanation cannot arbitrarily change the underlying security assessment.
 
 Public Demo: Lightweight deployment with deterministic analysis and fallback explanations.
-Local Docker: Full deployment with Ollama + Llama 3.2 3B.
+Local: Full deployment with Ollama + Llama 3.2 3B.
 
 ## The Problem
 
