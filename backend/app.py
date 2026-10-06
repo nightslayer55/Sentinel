@@ -7,7 +7,6 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS
 
 from analyzers.url_analyzer import analyze_url
-from analyzers.qr_analyzer import decode_qr
 from analyzers.message_analyzer import analyze_message
 
 app = Flask(__name__)
@@ -40,6 +39,8 @@ def analyze_url_endpoint():
 
 @app.post("/api/analyze/qr")
 def analyze_qr_endpoint():
+    from analyzers.qr_analyzer import decode_qr
+
     if "image" not in request.files:
         return jsonify({
             "error": "No QR image provided"
@@ -61,7 +62,6 @@ def analyze_qr_endpoint():
         return jsonify(qr_result), 400
 
     decoded_url = qr_result["data"]
-
     analysis = analyze_url(decoded_url)
 
     return jsonify({
