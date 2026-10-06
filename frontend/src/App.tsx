@@ -9,7 +9,8 @@ import {
   Search,
 } from "lucide-react";
 
-const API_URL = import.meta.env.VITE_API_URL || "/api";
+const API_URL =
+  import.meta.env.VITE_API_URL || "/api";
 
 type Mode = "url" | "qr" | "message";
 
@@ -64,7 +65,7 @@ function App() {
         formData.append("image", qrFile!);
 
         const response = await fetch(
-          "http://127.0.0.1:5000/api/analyze/qr",
+          `${API_URL}/analyze/qr`,
           {
             method: "POST",
             body: formData,
@@ -86,7 +87,7 @@ function App() {
       // URL
       if (mode === "url") {
         const response = await fetch(
-          "http://127.0.0.1:5000/api/analyze/url",
+  `${API_URL}/analyze/url`,
           {
             method: "POST",
             headers: {
@@ -112,7 +113,7 @@ function App() {
       // MESSAGE
       if (mode === "message") {
         const response = await fetch(
-          "http://127.0.0.1:5000/api/analyze/message",
+          `${API_URL}/analyze/message`,
           {
             method: "POST",
             headers: {
