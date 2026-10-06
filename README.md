@@ -22,6 +22,17 @@ The security engine performs deterministic analysis and calculates the risk scor
 
 ---
 
+## Deployment Disclaimer
+
+The public Vercel deployment of Sentinel does not currently run the Ollama/Llama AI model. Vercel hosts the Sentinel web interface and security analysis backend, while AI-generated explanations fall back to a lightweight local explanation system when Ollama is unavailable.
+
+The full Sentinel environment can be run locally with Docker, where Ollama and Llama 3.2 3B provide the AI explanation layer.
+
+The security risk score is calculated independently by Sentinel's deterministic security engine and is not generated or modified by the AI. This ensures that the AI explanation cannot arbitrarily change the underlying security assessment.
+
+Public Demo: Lightweight deployment with deterministic analysis and fallback explanations.
+Local Docker: Full deployment with Ollama + Llama 3.2 3B.
+
 ## The Problem
 
 Suspicious links are everywhere.
