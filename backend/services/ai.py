@@ -1,3 +1,5 @@
+import os
+
 try:
     import ollama
 except ImportError:
